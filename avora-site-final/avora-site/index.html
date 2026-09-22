@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6b4634" />
+  <meta name="description" content="Ávora — crochê feito à mão com elegância e afeto." />
+  <title>Ávora | Elegância em cada trama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ávora">
+      <span class="brand-mark">A</span>
+      <span class="brand-text">ÁVORA<small>feito à mão</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="cart-button" id="openCart" aria-label="Abrir carrinho">
+      <span>👜</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">CROCHÊ • FEITO À MÃO • COM AMOR</p>
+        <h1>Peças que carregam <em>histórias</em> em cada ponto.</h1>
+        <p class="hero-text">Criações artesanais para quem valoriza delicadeza, personalidade e cuidado nos detalhes.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#produtos">Ver coleção</a>
+          <a class="btn ghost" href="#contato">Fazer encomenda</a>
+        </div>
+        <div class="hero-badges">
+          <span>✦ Feito à mão</span>
+          <span>✦ Personalizável</span>
+          <span>✦ Produção artesanal</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Peça de crochê ilustrativa">
+        <div class="hero-card">
+          <img src="assets/bolsa-luna.svg" alt="Bolsa de crochê ilustrativa" />
+          <div class="hero-card-caption">
+            <span>Coleção Essência</span>
+            <strong>Bolsa Luna</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories" aria-label="Categorias">
+      <div class="section-heading">
+        <p class="eyebrow">ESCOLHA SEU ESTILO</p>
+        <h2>Feito para encantar</h2>
+      </div>
+      <div class="category-grid">
+        <button class="category-card active" data-filter="todos"><span>♡</span><strong>Todos</strong></button>
+        <button class="category-card" data-filter="bolsas"><span>👜</span><strong>Bolsas</strong></button>
+        <button class="category-card" data-filter="amigurumis"><span>🧸</span><strong>Amigurumis</strong></button>
+        <button class="category-card" data-filter="decoracao"><span>⌂</span><strong>Decoração</strong></button>
+        <button class="category-card" data-filter="personalizados"><span>✦</span><strong>Personalizados</strong></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="produtos">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">NOSSA COLEÇÃO</p>
+          <h2>Peças em destaque</h2>
+        </div>
+        <p>Modelos demonstrativos. Depois você pode substituir as imagens, nomes e preços pelos produtos reais.</p>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <section class="banner-section">
+      <div>
+        <p class="eyebrow light">SUA IDEIA, NOSSO CROCHÊ</p>
+        <h2>Quer uma peça feita especialmente para você?</h2>
+        <p>Escolha cores, tamanho e detalhes. A Ávora transforma sua ideia em uma peça única.</p>
+      </div>
+      <a class="btn light" href="#contato">Solicitar orçamento</a>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="about-image">
+        <img src="assets/atelier.svg" alt="Ateliê de crochê ilustrativo" />
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">SOBRE A ÁVORA</p>
+        <h2>Elegância em cada trama.</h2>
+        <p>A Ávora nasce do carinho pelo trabalho manual e da vontade de transformar fios em peças especiais. Cada criação é feita com atenção aos detalhes, respeitando o tempo do artesanal.</p>
+        <p>Do presente delicado à peça que completa seu estilo, cada produto pode carregar um pouco da sua personalidade.</p>
+        <div class="about-points">
+          <div><strong>100%</strong><span>Artesanal</span></div>
+          <div><strong>Único</strong><span>Feito com cuidado</span></div>
+          <div><strong>Você</strong><span>Personaliza</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="contact-card">
+        <p class="eyebrow">FALE COM A GENTE</p>
+        <h2>Vamos criar algo especial?</h2>
+        <p>Use os botões abaixo para encomendas, dúvidas ou para acompanhar novidades da Ávora.</p>
+        <div class="contact-actions">
+          <button class="btn primary" id="whatsappContact">Chamar no WhatsApp</button>
+          <a class="btn ghost" href="https://instagram.com/avoracroche" id="instagramLink" target="_blank" rel="noopener noreferrer">@avoracroche</a>
+          <button class="btn ghost" id="installApp" hidden>Instalar app</button>
+        </div>
+        <small>Pedidos pelo WhatsApp: +55 71 98277-1721 · Instagram: @avoracroche</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-mark small">A</span>
+      <div><strong>ÁVORA</strong><small>Elegância em cada trama.</small></div>
+    </div>
+    <p>© <span id="year"></span> Ávora. Feito à mão com amor.</p>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">SEU CARRINHO</p>
+        <h3>Suas escolhas</h3>
+      </div>
+      <button class="icon-button" id="closeCart" aria-label="Fechar carrinho">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="total-line"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="btn primary full" id="checkoutButton">Finalizar pelo WhatsApp</button>
+      <button class="btn text-button full" id="clearCart">Limpar carrinho</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
