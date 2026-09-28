@@ -4,8 +4,8 @@ const INSTAGRAM_URL = "https://instagram.com/avoracroche";
 const products = [
   {
     id: 1,
-    name: "Bag Ávora",
-    price: 89.90,
+    name: "Bag Avora P",
+    price: 84.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
@@ -14,7 +14,7 @@ const products = [
   {
     id: 2,
     name: "Bag Butter",
-    price: 89.90,
+    price: 94.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     name: "Bag Criança",
-    price: 69.90,
+    price: 58.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     name: "Bag Criança 1",
-    price: 69.90,
+    price: 58.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
@@ -40,8 +40,8 @@ const products = [
   },
   {
     id: 5,
-    name: "Bag Iva",
-    price: 89.90,
+    name: "Bag Iva P",
+    price: 84.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
@@ -49,8 +49,8 @@ const products = [
   },
   {
     id: 6,
-    name: "Bag Lívia",
-    price: 89.90,
+    name: "Bag Lívia P",
+    price: 99.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
@@ -59,7 +59,7 @@ const products = [
   {
     id: 7,
     name: "Bag Luiza Branco",
-    price: 89.90,
+    price: 94.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
@@ -68,7 +68,7 @@ const products = [
   {
     id: 8,
     name: "Bag Luiza Preto",
-    price: 89.90,
+    price: 94.90,
     category: "bolsas",
     categoryLabel: "Bolsas",
     tag: "Feito à mão",
